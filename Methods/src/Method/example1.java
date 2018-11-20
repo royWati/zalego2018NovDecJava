@@ -51,9 +51,33 @@ public class example1 {
             input data to our code
             
  
+        *//* the scanner moves line by line
+            to checking if there is an input on the 
+            output screen, there by storing the 
+            inputs as variables
+            in our case len and wid
         */
            Scanner scannerObj = new Scanner(System.in);
            int len, wid;
+           // the first value will be stored as len 
+           //using nextInt() method to convert from
+           // string to an integer
+           
+           System.out.println("enter length");
+           
+           len = scannerObj.nextInt(); 
+           
+           System.out.println("enter width");
+           wid = scannerObj.nextInt();
+           
+           // using the same area varible we created to store 
+           // the answer we will get
+           area = area_of_a_rectangle(len, wid);
+           System.out.println("the area is "+area);
+           
+           
+           
+           
            
     }
 }
